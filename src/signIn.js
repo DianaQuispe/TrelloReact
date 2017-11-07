@@ -14,7 +14,7 @@ import SignUp from "./signUp.js";
 import Board from "./boards.js";
 
 
-const Footer = ({ algo }) => {
+const Footer = ({ boards }) => {
   return (
     <div className="footer">
       <footer>
@@ -30,7 +30,7 @@ const Footer = ({ algo }) => {
     </div>
   );
 };
-const Header = ({ algo }) => {
+const Header = ({ boards }) => {
   return (
     <div>
       <div className="logo" />
@@ -39,7 +39,7 @@ const Header = ({ algo }) => {
     </div>
   );
 };
-const SignIn = ({ algo }) => {
+const SignIn = ({ boards }) => {
   return (
     <div>
       <Grid>
@@ -79,6 +79,6 @@ const SignIn = ({ algo }) => {
   );
 };
 
-const mapToProps = ({ algo }) => ({ algo });
+const mapToProps = ({ boards }) => ({ boards });
 
 export default connect(mapToProps)(SignIn);

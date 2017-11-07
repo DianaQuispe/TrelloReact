@@ -12,7 +12,7 @@ import Board from './boards.js'
 import { HashRouter, Switch, Route, NavLink } from 'react-router-dom';
 
 
-const Index = ({ food }) => {
+const Index = ({ boards }) => {
     return (
         <Provider store={store}>
             <HashRouter>

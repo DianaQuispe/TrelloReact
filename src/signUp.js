@@ -13,7 +13,7 @@ import { HashRouter, Switch, Route, NavLink } from "react-router-dom";
 import { SignIn } from "./signIn.js";
 import Board from "./boards.js";
 
-const Footer = ({ algo }) => {
+const Footer = ({ boards }) => {
   return (
     <div className="footer">
       <footer>
@@ -29,7 +29,7 @@ const Footer = ({ algo }) => {
     </div>
   );
 };
-const Header = ({ algo }) => {
+const Header = ({ boards }) => {
   return (
     <div>
       <div className="logo" />
@@ -39,7 +39,7 @@ const Header = ({ algo }) => {
   );
 };
 
-const SignUp = ({ algo }) => {
+const SignUp = ({ boards }) => {
   return (
     <div>
       <Grid>
@@ -99,6 +99,6 @@ const SignUp = ({ algo }) => {
   );
 };
 
-const mapToProps = ({ algo }) => ({ algo });
+const mapToProps = ({ boards }) => ({ boards });
 
 export default connect(mapToProps)(SignUp);

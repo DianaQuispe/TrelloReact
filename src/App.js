@@ -13,7 +13,7 @@ import {
 import './App.css';
 
 
-const App = ({algo}) => {
+const App = ({boards}) => {
     return <div>
         
         <SignIn />
@@ -24,6 +24,6 @@ const App = ({algo}) => {
   }
 
 
-const mapToProps = ({ algo }) => ({algo});
+const mapToProps = ({ boards }) => ({boards});
 
 export default connect(mapToProps) (App);

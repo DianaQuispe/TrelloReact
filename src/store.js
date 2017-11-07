@@ -3,12 +3,15 @@ import createStore from 'redux-zero'
 const BOARDS =
  [
    { 
-      name: 'tes board'
+      each: {
+          name:'tes board'
+
+      }
     }
  ]
 
 const initialState = {
-    algo: 1
+    boards: BOARDS
 }
 
 const store = createStore (initialState)
