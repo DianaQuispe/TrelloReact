@@ -2,12 +2,8 @@
 import createStore from 'redux-zero'
 const BOARDS =
  [
-    {
-        each: {
-        [lp],
-        [lp],
-        [lp]
-                }
+   { 
+      name: 'tes board'
     }
  ]
 
