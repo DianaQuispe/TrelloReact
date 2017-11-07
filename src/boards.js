@@ -17,7 +17,7 @@ const Boards = ({boards}) => {
       <div>
         <Col md={3}>
             <div className="boards">
-                asd
+               {boards}
             </div>    
         </Col>
      </div>
