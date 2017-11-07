@@ -1,8 +1,15 @@
 
 import createStore from 'redux-zero'
-const algo = [
-  
-]
+const BOARDS =
+ [
+    {
+        each: {
+        [lp],
+        [lp],
+        [lp]
+                }
+    }
+ ]
 
 const initialState = {
     algo: 1
