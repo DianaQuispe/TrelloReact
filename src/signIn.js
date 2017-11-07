@@ -1,20 +1,24 @@
 import React, { Component } from "react";
-import FieldGroup from "react-bootstrap";
+import { connect } from "redux-zero/react";
+import "./MusicApp.css";
+import { Grid, Row,Col, formGroup, FormControl, Button } from "react-bootstrap";
+import { HashRouter, Switch, Route, NavLink } from 'react-router-dom';
 
-class Form extends Component {
-  constructor(props) {
-    super(props);
-  }
-  render() {
-    return (
+const SignIn = ({ algo }) => {
+  return <div>
       <form>
-        <FieldGroup
-          type="email"
-          label="Email address"
-          value="john@phoenix-trello.com"
-        />
+        <formGroup>
+          <FormControl className="input" type="email" label="Email address" bsSize="sm" />
+          <FormControl className="input" label="Password" type="password" />
+        </formGroup>
+        <Button className="button" type="submit">
+          Sign In
+        </Button>
       </form>
-    );
-  }
-}
-export default Form;
+      <p>Create new account</p>
+    </div>;
+};
+
+const mapToProps = ({ algo }) => ({ algo });
+
+export default connect(mapToProps)(SignIn);

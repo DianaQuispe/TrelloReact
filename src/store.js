@@ -1,10 +1,11 @@
 
 import createStore from 'redux-zero'
-const SONGS = [
+const algo = [
   
 ]
 
 const initialState = {
+    algo: 1
 }
 
 const store = createStore (initialState)
